@@ -1,4 +1,4 @@
-AniQuote allows users to input an anime character name and will get an image and quote from that character in response.
+AniQuote allows users to input an anime character's name and will get an image and quote from that character in response.
 The code sends requests to Jikan API and Animechan API for details regarding the specified character.
 
 Demo
