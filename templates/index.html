@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/e52ccfa142.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <img src="{{ image_url }}" alt="Anime Character Image">
+    <h1 class="logo">AniQuotes</h1>
+    <form method="POST" action="/">
+        <input type="text" placeholder="Search character..." name="search_query">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <img src="{{ image_url }}" alt="Anime Character Image" style="padding: 1em;">
+    <div class="quote">"{{ quote }}" - <span style="font-style: italic;">{{ char_name }}</span></div>
 </body>
 </html>
