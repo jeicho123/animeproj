@@ -2,7 +2,7 @@ import requests
 import json
 from flask import Flask, render_template, request
 
-with open('char_id.json', 'r') as f:
+with open('data/char_id.json', 'r') as f:
     cache = json.load(f)
 
 app = Flask(__name__)
